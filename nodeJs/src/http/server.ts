@@ -3,6 +3,7 @@ import { PrismaClient } from "@prisma/client"
 import z from "zod";
 
 const app = fastify()
+const prisma = new PrismaClient()
 
 app.post("/polls", async (request, reply) => {
   const createPollBody = z.object({
@@ -11,7 +12,7 @@ app.post("/polls", async (request, reply) => {
 
   const {title} = createPollBody.parse(request.body)
 
-  const poll = await PrismaClient.poll.create({
+  const poll = await prisma.poll.create({
     data: {
       title
     }
