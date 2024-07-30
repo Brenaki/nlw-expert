@@ -2,10 +2,10 @@
   "expo": {
     "name": "reactNative",
     "slug": "reactNative",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myApp",
+    "scheme": "myapp",
     "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -22,9 +22,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#0F172A"
-      },
-      "package": "com.brenaki.ReactNativeExpert",
-      "versionCode": 2
+      }
     },
     "web": {
       "bundler": "metro",
@@ -37,14 +35,6 @@
     ],
     "experiments": {
       "typedRoutes": true
-    },
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "b062e58f-a12a-4aca-bd41-602b38cce7a7"
-      }
     }
   }
 }
